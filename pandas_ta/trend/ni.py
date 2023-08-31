@@ -38,5 +38,3 @@ def ni(close, length=None, centered=False, offset=None, **kwargs):
     ni.category = "trend"
 
     return ni
-
-ni.__doc__ = \
