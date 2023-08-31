@@ -69,7 +69,7 @@ Category = {
     # Trend
     "trend": [
         "adx", "amat", "aroon", "chop", "cksp", "decay", "decreasing", "dpo",
-        "increasing", "long_run", "psar", "qstick", "short_run", "tsignals",
+        "increasing", "long_run", "ni", "psar", "qstick", "short_run", "tsignals",
         "ttm_trend", "vhf", "vortex", "xsignals"
     ],
     # Volatility
