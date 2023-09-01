@@ -1458,6 +1458,11 @@ class AnalysisIndicators(BasePandasObject):
             result = long_run(fast=fast, slow=slow, length=length, offset=offset, **kwargs)
             return self._post_process(result, **kwargs)
 
+    def ni(self, length=None, offset=None, **kwargs):
+        close = self._get_column(kwargs.pop("close", "close"))
+        result = ni(close=close, length=length, offset=offset, **kwargs)
+        return self._post_process(result, **kwargs)
+
     def psar(self, af0=None, af=None, max_af=None, offset=None, **kwargs):
         high = self._get_column(kwargs.pop("high", "high"))
         low = self._get_column(kwargs.pop("low", "low"))
